@@ -23,6 +23,11 @@ docker-compose up
 * Enviroment file :
 `cp .env.example .env`
 
+* Composer optimize commands :
+```
+composer update
+```
+
 * Generate key and optimize commands :
 ```
 docker-compose exec app php artisan key:generate
@@ -32,4 +37,4 @@ docker-compose exec app php artisan cache:clear
 * Migrate database
 `docker-compose exec app php artisan migrate --seed`
 
-4. Laravel should work by access http://0.0.0.0:8080
+4. Laravel should work by access http://localhost:8080/
